@@ -50,9 +50,9 @@ def gemius(id):
 	# construct JSON for DR most viewed HTTP POST 
 	
 	# Sometimes Product is None:
-    product = Client.Product
-    if product is None:
-        product = 'unknown'
+	product = Client.Product
+	if product is None:
+		product = 'unknown'
     
 	json = JSON.ObjectFromString('{"id":"' + id + '","Client":"Plex.' + product + '.' + Client.Version + '"}')
  	# POST to increase DR most viewed list  
